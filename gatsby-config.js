@@ -27,8 +27,15 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-microcms",
+      options: {
+        apiKey: '285d1395-78f3-4abb-aa80-25747419df5e',
+        serviceId: 'kawaraban',
+        apis: [{
+          endpoint: 'articles',
+        }],
+      },
+    },
   ],
 }
