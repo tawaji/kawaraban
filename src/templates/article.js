@@ -13,8 +13,8 @@ const ArticlePost = props => {
        <br />
        <img
          src={post.pict.url}
-         width={160}
-         height={110}
+         width={500}
+        //  height={500}
          alt="pict画像"
        />
        <p

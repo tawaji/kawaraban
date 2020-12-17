@@ -26,6 +26,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+
       <div
         style={{
           margin: `0 auto`,
@@ -33,13 +34,12 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
+        
         <main>{children}</main>
         <footer style={{
           marginTop: `2rem`
         }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+         <small>&copy;tawaji</small>
         </footer>
       </div>
     </>
