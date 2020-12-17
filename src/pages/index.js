@@ -33,7 +33,7 @@ const IndexPage = ({ data }) => (
            <img
              src={articles.pict.url}
              width={110}
-             height={110}
+            //  height={110}
              alt="pict画像"
            />
          </div>
