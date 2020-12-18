@@ -1,23 +1,15 @@
 {
   "routes": [
     {
-      "route": "/",
-      "allowedRoles": ["authenticated"]
-    },
-    {
-      "route": "/articles/*",
+      "route": "/*",
       "allowedRoles": ["authenticated"]
     }
   ],
   "platformErrorOverrides": [
     {
-      "errorType": "NotFound",
-      "serve": "/custom-404.html"
-    },
-    {
       "errorType": "Unauthenticated",
       "statusCode": "302",
-      "serve": "/login"
+      "serve": "/error"
     }
   ],
   "defaultHeaders": {
